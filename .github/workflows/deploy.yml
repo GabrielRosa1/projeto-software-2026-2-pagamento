@@ -48,4 +48,4 @@ jobs:
           script: |
             docker stop pagamento
             docker rm --force pagamento
-            docker run -d -p 8080:8080 --network=rede --name pagamento gabrielrosa1/campeonato-ci:${{ github.sha }}
+            docker run -d -p 8080:8080 --name pagamento gabrielrosa1/pagamento-ci:${{ github.sha }}
